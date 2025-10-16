@@ -17,6 +17,9 @@ services:
     image:
       # Pulls the n8n image tagged as latest from Docker Hub
       url: docker.io/n8nio/n8n:latest
+    databases:
+      - name: n8n-db
+        plan: basic-256mb 
 
     # All environment variables defined below are required!
     #
